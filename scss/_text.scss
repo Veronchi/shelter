@@ -1,0 +1,7 @@
+@mixin regular-text($color) {
+  color: $color;
+  font-family: "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
+}

@@ -1,0 +1,126 @@
+html {
+  box-sizing: border-box;
+}
+
+::after,
+::before {
+  box-sizing: inherit;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin: 0 auto;
+}
+
+.gradient {
+  background-image: url("../img/start-screen-gradient-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header {
+  margin-bottom: 70px;
+}
+
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 60px;
+}
+.header__top .top-logo__title {
+  font-family: "Georgia", sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 35px;
+  color: #f1cdb3;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+}
+.header__top .top-logo__subtitle {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  color: #ffffff;
+  letter-spacing: 0.1em;
+}
+.header__top .navigation__list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+}
+.header__top .navigation__list .navigation__item + .navigation__item {
+  margin-left: 35px;
+}
+.header__top .navigation__list .navigation__link {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  color: #cdcdcd;
+  padding-bottom: 4px;
+}
+.header__top .navigation__list .navigation__link:hover {
+  color: #FAFAFA;
+}
+.header__top .navigation__list .navigation__link_active {
+  color: #FAFAFA;
+  border-bottom: 3px solid #F1CDB3;
+}
+
+.banner__inner {
+  display: flex;
+  justify-content: space-between;
+}
+.banner__inner .banner__left {
+  margin-right: 42px;
+  padding-top: 160px;
+}
+.banner__inner .banner__left .banner__title {
+  font-family: "Georgia", sans-serif;
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 57px;
+  color: #FFFFFF;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 42px;
+}
+.banner__inner .banner__left .banner__text {
+  margin: 0;
+  padding: 0;
+  color: #CDCDCD;
+  font-family: "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+.banner__inner .banner__left .banner__link {
+  background-color: #F1CDB3;
+  display: inline-block;
+  color: #292929;
+  padding-right: 45px;
+  padding-left: 45px;
+  font-family: "Georgia", sans-serif;
+  font-size: 17px;
+  line-height: 52px;
+  font-weight: 400;
+  text-decoration: none;
+  border-radius: 50px;
+  border: 1px solid #F1CDB3;
+}
+
+/*# sourceMappingURL=style.css.map */
