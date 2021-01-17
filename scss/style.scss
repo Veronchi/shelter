@@ -14,16 +14,14 @@ img {
 }
 
 .container {
-  width: 1200px;
+  max-width: 1200px;
   padding-left: 40px;
   padding-right: 40px;
   margin: 0 auto;
 }
 
 .gradient {
-  background-image: url("../img/start-screen-gradient-background.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: url('../img/noise_transparent2x.png'), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
 }
 
 .header {
@@ -33,6 +31,7 @@ img {
 .header__top {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   padding-top: 60px;
 
   .top-logo__title {
@@ -60,8 +59,10 @@ img {
   .navigation__list {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     list-style: none;
+    padding: 0;
     
     .navigation__item + .navigation__item {
       margin-left: 35px;
@@ -92,10 +93,12 @@ img {
 .banner__inner {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 
   .banner__left {
     margin-right: 42px;
     padding-top: 160px;
+    flex-basis: 460px;
 
     .banner__title {
       font-family: "Georgia", sans-serif;
@@ -118,6 +121,13 @@ img {
     .banner__link {
       background-color: #F1CDB3;
       @include button;
+    }
+  }
+
+  .banner__right {
+    .banner__img {
+      width: 100%;
+      object-fit: cover;
     }
   }
 }
