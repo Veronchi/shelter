@@ -6,9 +6,15 @@
     font-family: "Georgia", sans-serif;
     font-size: 17px;
     line-height: 52px;
+    letter-spacing: 0.06em;
     font-weight: 400;
     text-decoration: none;
     border-radius: 50px;
     border: 1px solid #F1CDB3;
     white-space: nowrap;
+
+    &:hover {
+      background: #FDDCC4;
+      border: 1px solid #FDDCC4;
+    }
   }
