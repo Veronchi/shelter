@@ -178,12 +178,12 @@ img {
   }
 }
 
-.slider {
+.pets {
   background-color: #f6f6f6;
   padding-top: 80px;
   padding-bottom: 100px;
 
-  .slider__title {
+  &__title {
     max-width: 400px;
     text-align: center;
     margin: 0 auto;
@@ -192,54 +192,95 @@ img {
     @include title;
   }
 
-  .slider__inner {
+  &__inner {
+    .slider {
+      position: relative;
+      padding-left: 52px;
+      padding-right: 52px;
 
-    .slider__list {
-      list-style-type: none;
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
-      padding: 0;
-      margin: 0;
-      margin-bottom: 60px;
+      .slider__list {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 0;
+        margin: 0;
+        margin-bottom: 60px;
 
-      .slider__item {
-        width: 270px;
-        height: 435px;
-        text-align: center;
-        background: #fafafa;
-        border-radius: 9px;
+        .slider__item {
+          width: 270px;
+          height: 435px;
+          text-align: center;
+          background: #fafafa;
+          border-radius: 9px;
+
+          &:hover {
+            background: #ffffff;
+          }
+
+          img {
+            margin-bottom: 30px;
+          }
+
+          .slider__text {
+            margin: 0;
+            padding: 0;
+            margin-bottom: 30px;
+            @include item-text;
+          }
+
+          .slider__link {
+            background-color: transparent;
+            @include button;
+          }
+        }
+      }
+
+      .slider__arrow {
+        position: absolute;
+        background-color: transparent;
+        width: 52px;
+        height: 52px;
+        border: 2px solid #F1CDB3;
+        border-radius: 100px;
 
         &:hover {
-          background: #ffffff;
+          background: #FDDCC4;
+          border: 2px solid #FDDCC4;
+        }
+        
+        &::after {
+          content: " ";
+          display: block;
+          background-image: url('../img/slider-arrow.svg');
+          background-repeat: no-repeat;
+          width: 16px;
+          height: 6px;
+          margin: 0 auto;
         }
 
-        img {
-          margin-bottom: 30px;
+        &_left {
+          left: 0;
+          top: 50%;
+          margin-top: -26px;
         }
 
-        .slider__text {
-          margin: 0;
-          padding: 0;
-          margin-bottom: 30px;
-          @include item-text;
-        }
-
-        .slider__link {
-          background-color: transparent;
-          @include button;
+        &_right {
+          transform: rotate(180deg);
+          right: 0;
+          top: 50%;
+          margin-top: -26px;
         }
       }
     }
+  }
 
-    .slider__footer {
-      text-align: center;
+  &__footer {
+    text-align: center;
 
-      .slider__button {
-        background: #f1cdb3;
-        @include button;
-      }
+    .pets__button {
+      background: #f1cdb3;
+      @include button;
     }
-
   }
 }
