@@ -241,18 +241,18 @@ img {
         background-color: transparent;
         width: 52px;
         height: 52px;
-        border: 2px solid #F1CDB3;
+        border: 2px solid #f1cdb3;
         border-radius: 100px;
 
         &:hover {
-          background: #FDDCC4;
-          border: 2px solid #FDDCC4;
+          background: #fddcc4;
+          border: 2px solid #fddcc4;
         }
-        
+
         &::after {
           content: " ";
           display: block;
-          background-image: url('../img/slider-arrow.svg');
+          background-image: url("../img/slider-arrow.svg");
           background-repeat: no-repeat;
           width: 16px;
           height: 6px;
@@ -281,6 +281,210 @@ img {
     .pets__button {
       background: #f1cdb3;
       @include button;
+    }
+  }
+}
+
+.help {
+  padding-top: 80px;
+  padding-bottom: 100px;
+
+  &__title {
+    max-width: 310px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+    @include title;
+  }
+
+  &__list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .help__item {
+      flex-basis: 240px;
+      margin-top: 60px;
+
+      .help__img {
+        margin: 0 auto;
+        margin-bottom: 30px;
+      }
+
+      .help__text {
+        padding: 0;
+        margin: 0;
+        @include item-text;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.donation {
+  background-color: #f6f6f6;
+  padding-top: 80px;
+  padding-bottom: 101px;
+
+  .donation__inner {
+    max-width: 915px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+
+    .donation__left {
+      margin-right: 30px;
+    }
+
+    .donation__right {
+      .donation__title {
+        padding: 0;
+        margin: 0;
+        margin-bottom: 20px;
+        @include title;
+      }
+
+      .donation__subtitle {
+        padding: 0;
+        margin: 0;
+        margin-bottom: 20px;
+        font-family: "Georgia", sans-serif;
+        font-size: 15px;
+        line-height: 17px;
+        letter-spacing: 0.06em;
+        color: #545454;
+      }
+
+      .donation__craditcard {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 349px;
+        height: 43px;
+        background-color: #f1cdb3;
+        border-radius: 9px;
+        text-decoration: none;
+        margin-bottom: 20px;
+
+        &:hover {
+          background: #fddcc4;
+        }
+
+        .donation__number {
+          font-family: "Georgia", sans-serif;
+          font-size: 20px;
+          line-height: 23px;
+          letter-spacing: 0.06em;
+          color: #545454;
+          margin: 0;
+          padding: 0;
+        }
+      }
+
+      .donation__text {
+        margin: 0;
+        padding: 0;
+        font-family: "Arial", sans-serif;
+        font-style: italic;
+        font-size: 12px;
+        line-height: 18px;
+        color: #b2b2b2;
+      }
+    }
+  }
+}
+
+.footer {
+  padding-top: 40px;
+
+  .footer__inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+
+    .footer__connection {
+      width: 300px;
+      padding-bottom: 60px;
+
+      .connection__title {
+        margin: 0;
+        padding: 0;
+        @include title;
+        color: #ffffff;
+      }
+      .connection__list {
+        padding: 0;
+        margin: 0;
+
+        .connection__item {
+          list-style-type: none;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 250px;
+          margin-top: 40px;
+
+          .connection__text {
+            font-family: "Georgia", sans-serif;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 23px;
+            letter-spacing: 0.06em;
+            color: #f1cdb3;
+            padding: 0;
+            margin: 0; 
+          }
+        }
+      }
+    }
+
+    .footer__address {
+      padding-bottom: 60px;
+      width: 305px;
+
+      .address__title {
+        padding: 0;
+        margin: 0;
+        @include title;
+        color: #ffffff;
+      }
+
+      .address__list {
+        padding: 0;
+        margin: 0;
+
+        .address__item {
+          list-style: none;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 300px;
+          margin-top: 35px;
+
+          .address__text {
+            font-family: "Georgia", sans-serif;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 23px;
+            letter-spacing: 0.06em;
+            color: #f1cdb3;
+            padding: 0;
+            margin: 0; 
+          }
+        }
+      }
+    }
+
+    .footer__img {
+      img {
+        display: block;
+        width: 100%;
+        object-fit: cover;
+      }
     }
   }
 }
