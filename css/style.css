@@ -25,13 +25,14 @@
 .catalog {
   background: #F6F6F6;
   padding-top: 60px;
+  padding-bottom: 100px;
 }
 .catalog__title {
   width: 400px;
   text-align: center;
   margin: 0 auto;
   padding: 0;
-  margin-bottom: 45px;
+  margin-bottom: 15px;
   font-family: "Georgia", sans-serif;
   font-weight: 400;
   font-size: 35px;
@@ -54,6 +55,7 @@
   text-align: center;
   background: #fafafa;
   border-radius: 9px;
+  margin-top: 30px;
 }
 .catalog .catalog__list .catalog__item:hover {
   background: #ffffff;
@@ -91,6 +93,161 @@
 .catalog .catalog__list .catalog__item .catalog__link:hover {
   background: #FDDCC4;
   border: 1px solid #FDDCC4;
+}
+.catalog__pagination {
+  width: 340px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.catalog__pagination .catalog__doublearrow_left {
+  position: relative;
+  background-color: transparent;
+  width: 52px;
+  height: 52px;
+  border: 2px solid #F1CDB3;
+  box-sizing: border-box;
+  border-radius: 100px;
+  font-family: "Georgia", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.06em;
+  color: #292929;
+  cursor: pointer;
+  outline: none;
+}
+.catalog__pagination .catalog__doublearrow_left:hover {
+  background: #FDDCC4;
+  border: 2px solid #FDDCC4;
+}
+.catalog__pagination .catalog__doublearrow_left::after {
+  content: "<<";
+  position: absolute;
+  top: 11px;
+  left: 10px;
+}
+.catalog__pagination .catalog__doublearrow_left_disabled {
+  border: 2px solid #CDCDCD;
+  color: #CDCDCD;
+  pointer-events: none;
+}
+.catalog__pagination .catalog__arrow_left {
+  position: relative;
+  background-color: transparent;
+  width: 52px;
+  height: 52px;
+  border: 2px solid #F1CDB3;
+  box-sizing: border-box;
+  border-radius: 100px;
+  font-family: "Georgia", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.06em;
+  color: #292929;
+  cursor: pointer;
+  outline: none;
+}
+.catalog__pagination .catalog__arrow_left:hover {
+  background: #FDDCC4;
+  border: 2px solid #FDDCC4;
+}
+.catalog__pagination .catalog__arrow_left::after {
+  content: "<";
+  position: absolute;
+  top: 11px;
+  left: 16px;
+}
+.catalog__pagination .catalog__arrow_left_disabled {
+  border: 2px solid #CDCDCD;
+  color: #CDCDCD;
+  pointer-events: none;
+}
+.catalog .catalog__number {
+  position: relative;
+  background-color: transparent;
+  width: 52px;
+  height: 52px;
+  border: 2px solid #F1CDB3;
+  box-sizing: border-box;
+  border-radius: 100px;
+  font-family: "Georgia", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.06em;
+  color: #292929;
+  cursor: pointer;
+  outline: none;
+}
+.catalog .catalog__number:hover {
+  background: #FDDCC4;
+  border: 2px solid #FDDCC4;
+}
+.catalog .catalog__number::after {
+  content: "1";
+  position: absolute;
+  bottom: 15px;
+  right: 19px;
+}
+.catalog .catalog__number_active {
+  background: #F1CDB3;
+  border: 2px solid #F1CDB3;
+}
+.catalog .catalog__doublearrow_right {
+  position: relative;
+  background-color: transparent;
+  width: 52px;
+  height: 52px;
+  border: 2px solid #F1CDB3;
+  box-sizing: border-box;
+  border-radius: 100px;
+  font-family: "Georgia", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.06em;
+  color: #292929;
+  cursor: pointer;
+  outline: none;
+}
+.catalog .catalog__doublearrow_right:hover {
+  background: #FDDCC4;
+  border: 2px solid #FDDCC4;
+}
+.catalog .catalog__doublearrow_right::after {
+  content: ">>";
+  position: absolute;
+  top: 11px;
+  left: 12px;
+}
+.catalog .catalog__arrow_right {
+  position: relative;
+  background-color: transparent;
+  width: 52px;
+  height: 52px;
+  border: 2px solid #F1CDB3;
+  box-sizing: border-box;
+  border-radius: 100px;
+  font-family: "Georgia", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.06em;
+  color: #292929;
+  cursor: pointer;
+  outline: none;
+}
+.catalog .catalog__arrow_right:hover {
+  background: #FDDCC4;
+  border: 2px solid #FDDCC4;
+}
+.catalog .catalog__arrow_right::after {
+  content: ">";
+  position: absolute;
+  top: 11px;
+  left: 19px;
 }
 
 html {

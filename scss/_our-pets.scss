@@ -35,13 +35,14 @@
 .catalog {
   background: #F6F6F6;
   padding-top: 60px;
+  padding-bottom: 100px;
 
     &__title {
       width: 400px;
       text-align: center;
       margin: 0 auto;
       padding: 0;
-      margin-bottom: 45px;
+      margin-bottom: 15px;
       @include title;
     }
 
@@ -60,6 +61,7 @@
       text-align: center;
       background: #fafafa;
       border-radius: 9px;
+      margin-top: 30px;
 
       &:hover {
         background: #ffffff;
@@ -82,4 +84,80 @@
       }
     }
   }
+
+  &__pagination {
+    width: 340px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+
+    .catalog__doublearrow_left {
+      @include pagination;
+
+      &::after {
+        content: "<<";
+        position: absolute;
+        top: 11px;
+        left: 10px;
+      }
+    }
+
+    .catalog__doublearrow_left_disabled {
+      @include disabled;
+    }
+
+    .catalog__arrow_left  {
+      @include pagination;
+
+      &::after {
+        content: "<";
+        position: absolute;
+        top: 11px;
+        left: 16px;
+      }
+    }
+
+    .catalog__arrow_left_disabled {
+      @include disabled;
+    }
+  }
+
+  .catalog__number {
+    @include pagination;
+
+    &::after {
+      content: "1";
+      position: absolute;
+      bottom: 15px;
+      right: 19px;
+    }
+  }
+
+  .catalog__number_active {
+    background: #F1CDB3;
+    border: 2px solid #F1CDB3;
+  }
+
+  .catalog__doublearrow_right {
+    @include pagination;
+
+    &::after {
+      content: ">>";
+        position: absolute;
+        top: 11px;
+        left: 12px;
+    }
+  }
+
+  .catalog__arrow_right {
+    @include pagination;
+
+    &::after {
+      content: ">";
+      position: absolute;
+      top: 11px;
+      left: 19px;
+    }
+  }
+
 }

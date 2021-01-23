@@ -1,4 +1,4 @@
-@mixin button() {
+@mixin button {
     display: inline-block;
     color: #292929;
     padding-right: 45px;
@@ -18,3 +18,32 @@
       border: 1px solid #FDDCC4;
     }
   }
+
+@mixin pagination {
+  position: relative;
+  background-color: transparent;
+  width: 52px;
+  height: 52px;
+  border: 2px solid #F1CDB3;
+  box-sizing: border-box;
+  border-radius: 100px;
+  font-family: "Georgia", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.06em;
+  color: #292929;
+  cursor: pointer;
+  outline: none;
+
+  &:hover {
+    background: #FDDCC4;
+    border: 2px solid #FDDCC4;
+  }
+}
+
+@mixin disabled {
+  border: 2px solid #CDCDCD;
+  color: #CDCDCD;
+  pointer-events: none;
+}
