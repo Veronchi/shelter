@@ -1,3 +1,98 @@
+.header__pets {
+  padding-bottom: 30px;
+  background: #FFFFFF;
+}
+.header__pets .header__top {
+  padding-top: 30px;
+}
+.header__pets .header__top .top-logo__title {
+  color: #545454;
+}
+.header__pets .header__top .top-logo__subtitle {
+  color: #292929;
+}
+.header__pets .header__top .navigation__list .navigation__link {
+  color: #545454;
+}
+.header__pets .header__top .navigation__list .navigation__link:hover {
+  color: #292929;
+}
+.header__pets .header__top .navigation__list .navigation__link_active {
+  color: #545454;
+  border-bottom: 3px solid #F1CDB3;
+}
+
+.catalog {
+  background: #F6F6F6;
+  padding-top: 60px;
+}
+.catalog__title {
+  width: 400px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+  margin-bottom: 45px;
+  font-family: "Georgia", sans-serif;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 45px;
+  letter-spacing: 0.06em;
+  color: #545454;
+}
+.catalog .catalog__list {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 60px;
+}
+.catalog .catalog__list .catalog__item {
+  width: 270px;
+  height: 435px;
+  text-align: center;
+  background: #fafafa;
+  border-radius: 9px;
+}
+.catalog .catalog__list .catalog__item:hover {
+  background: #ffffff;
+}
+.catalog .catalog__list .catalog__item img {
+  margin-bottom: 30px;
+}
+.catalog .catalog__list .catalog__item .catalog__text {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
+  font-family: "Georgia", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.06em;
+  color: #545454;
+}
+.catalog .catalog__list .catalog__item .catalog__link {
+  background-color: transparent;
+  display: inline-block;
+  color: #292929;
+  padding-right: 45px;
+  padding-left: 45px;
+  font-family: "Georgia", sans-serif;
+  font-size: 17px;
+  line-height: 52px;
+  letter-spacing: 0.06em;
+  font-weight: 400;
+  text-decoration: none;
+  border-radius: 50px;
+  border: 1px solid #F1CDB3;
+  white-space: nowrap;
+}
+.catalog .catalog__list .catalog__item .catalog__link:hover {
+  background: #FDDCC4;
+  border: 1px solid #FDDCC4;
+}
+
 html {
   box-sizing: border-box;
 }
