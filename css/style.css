@@ -1,4 +1,11 @@
+.our-pets {
+  padding-top: 120px;
+}
+
 .header__pets {
+  position: fixed;
+  top: 0;
+  width: 100%;
   padding-bottom: 30px;
   background: #FFFFFF;
 }
@@ -43,7 +50,7 @@
 .catalog .catalog__list {
   list-style-type: none;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
   padding: 0;
   margin: 0;
